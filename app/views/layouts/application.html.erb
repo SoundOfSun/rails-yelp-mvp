@@ -13,6 +13,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render  'shared/navbar'%>
+    <div class="container text-center">
+      <h1>Welcome to Yelp !</h1>
+      <div class="restaurants">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render 'shared/footer'%>
   </body>
 </html>
